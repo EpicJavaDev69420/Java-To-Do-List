@@ -30,6 +30,7 @@ public class ToDoList {
 
     }
 
+    
     public static void loadMenu() {
         System.out.println("+-----------------------------------+\n" +
                 "|          To-Do List Menu          |\n" +
@@ -52,6 +53,7 @@ public class ToDoList {
             System.out.println("\nYour current Tasks: ");
         }
 
+        //just checking where the end of the array is
         for (int i = 0; i < toDoList.size(); i++) {
 
             if (toDoList.get(i) == toDoList.get(toDoList.size() - 1)) {
@@ -69,6 +71,7 @@ public class ToDoList {
         int amountOfTasks = scanner.nextInt();
         scanner.nextLine();
 
+        //small little grammar feater (I think?)
         for (int i = 0; i < amountOfTasks; i++) {
             if (i == 0) {
                 System.out.println("\nWhat Task do you wanna add?");
